@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bungee+Tint&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Doto:wght@100..900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Yatra+One&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Idade</title>
+</head>
+
+<body>
+    <h1>Lima's Adega</h1>
+    <div class="container">
+        
+        <p>Insira a sua idade:</p>
+        <input type="number" name="" id="idadeInput">
+        <button onclick="verificarIdade()">Verificar</button>
+    </div>
+
+    <script>
+        function verificarIdade() {
+            const idade = parseInt(document.getElementById("idadeInput").value);
+
+            if (idade >= 18) {
+
+                window.location.href = "permitido.html";
+            } else {
+                window.location.href = "npermitido.html";
+            }
+        }
+    </script>
+</body>
+
+</html>
